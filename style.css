@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'tanmoncherie';
+    src: url(fontes/TAN_MON_CHERI/TAN-MON\ CHERI.otf) format(opentype);
+}
+
+:root {
+    --cor0: #093b27;
+    --cor1: #17A16A;
+    --cor2: #138256;
+    --cor3: #98C7B5;
+    --cor4: #a9c5ba;
+
+    --fonte-destaque: 'tanmoncherie', Verdana, sans-serif;
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    color: white;
+    max-height: 90vh;
+}
+
+picture.imagemtrans:fullscreen {
+    transition-duration: 3s;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    display:inline-block;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-align: justify;
+    margin: auto;
+    padding-right: 30px;
+}
+
+nav a:hover {
+    color: var(--cor4);
+    transition-duration: 0.3s;
+}
+
+main {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+main > h1 {
+    font-family: var(--fonte-destaque);
+    padding-bottom: 5px;
+}
+
+main > h2 {
+    font-weight: normal;
+    font-size: 1.2em;
+    margin-bottom: 200px;
+}
+
+main > p {
+    font-size: 1em;
+    padding: 5px;
+}
