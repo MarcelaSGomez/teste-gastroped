@@ -28,6 +28,10 @@ body {
     max-height: 90vh;
 }
 
+picture{
+    max-width: 900px;
+}
+
 picture.imagemtrans:fullscreen {
     transition-duration: 3s;
 }
@@ -40,7 +44,7 @@ nav {
     display:inline-block;
     text-align: center;
     margin: auto;
-    padding: 30px;
+    padding: 10px;
 }
 
 nav a {
